@@ -1,4 +1,4 @@
-sudo apt-get purge cloud-init
+sudo apt-get purge cloud-init -y
 sudo rm -rf /etc/cloud/ && sudo rm -rf /var/lib/cloud/
 sudo apt update && sudo apt upgrade -y
 sudo apt install xterm -y
