@@ -1,3 +1,4 @@
+sudo apt update && sudo apt upgrade -y
 sudo apt install xterm -y
 sudo apt install neofetch -y
 sudo apt install openssh-server -y
