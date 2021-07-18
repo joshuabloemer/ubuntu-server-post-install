@@ -10,13 +10,8 @@ wget https://download.opensuse.org/repositories/home:/antergos/xUbuntu_17.10/amd
 sudo dpkg -i lightdm-webkit2-greeter_2.2.5-1+15.31_amd64.deb
 
 sudo cat > /etc/lightdm/lightdm.conf << EOF
-NameVirtualHost 127.0.0.1
-
-# Default
-<VirtualHost 127.0.0.1>
-ServerName localhost
-DocumentRoot "C:/wamp/www"
-</VirtualHost>
+[Seat:*]
+greeter-session=lightdm-webkit2-greeter
 EOF
 
 
