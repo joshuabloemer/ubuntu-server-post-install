@@ -1,3 +1,4 @@
+sudo echo 'APT::Acquire::Retries "3";' > /etc/apt/apt.conf.d/80-retries
 sudo apt-get purge cloud-init -y
 sudo rm -rf /etc/cloud/ && sudo rm -rf /var/lib/cloud/
 # sudo apt update && sudo apt upgrade -y
