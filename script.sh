@@ -5,7 +5,7 @@ sudo rm -rf /etc/cloud/ && sudo rm -rf /var/lib/cloud/
 sudo apt install xterm -y
 sudo apt install neofetch -y
 # sudo apt install openssh-server -y
-sudo systemctl enable ssh 
+# sudo systemctl enable ssh 
 sudo apt-get install xserver-xorg-core openbox xinit -y
 sudo apt install --no-install-recommends lightdm-gtk-greeter -y
 sudo apt install --no-install-recommends lightdm -y
