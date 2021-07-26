@@ -15,10 +15,7 @@ sudo apt install --no-install-recommends libwebkit2gtk-4.0-37 -y
 wget https://download.opensuse.org/repositories/home:/antergos/xUbuntu_17.10/amd64/lightdm-webkit2-greeter_2.2.5-1+15.31_amd64.deb
 sudo dpkg -i lightdm-webkit2-greeter_2.2.5-1+15.31_amd64.deb
 
-sudo "cat > /etc/lightdm/lightdm.conf << EOF
-[Seat:*]
-greeter-session=lightdm-webkit2-greeter
-EOF"
+sudo bash -c 'printf "[Seat:*]\ngreeter-session=lightdm-webkit2-greeter" > /etc/lightdm/lightdm.conf'
 
 
 git clone https://github.com/joshuabloemer/Aether.git
